@@ -30,11 +30,16 @@ h3 {
   border-radius: 15px;
   padding: 10px;
   cursor: pointer;
-  color: white;
-  display: block;
+  display: block; /* either for width percentage or margin centering? */
   height: 65px;
-  width: 95%;
-  margin: 0 auto;
+  width: 95%; /* sets button to percentage of screen width */
+  margin: 0 auto; /* centers button to screen width */
+  /* font stuff */
+  color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px;
 }
 
 /* Link button on hover & focus */
@@ -42,20 +47,14 @@ h3 {
   background-color: #ff7967;
 }
 
-button a{
-  font-family: Helvetica;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 25px;
-}
-
 /* Image style for inside buttons */
 button img {
-  height: 100%; /* Scales relative to button height */
+  height: 100%;
   width: auto;   /* Maintains aspect ratio */
   object-fit: contain; /* Prevents distortion if width/height are both set */
   padding-right: 15px;
-  vertical-align: middle;
+  vertical-align: middle; /* centers text to image vertically */
+  box-align: left;
 }
 
 /* unvisited link */
