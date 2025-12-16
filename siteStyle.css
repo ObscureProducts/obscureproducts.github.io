@@ -1,8 +1,10 @@
 /* Full site formatting */
 * {
   font-family: Helvetica;
+  text-align: center;
 }
 
+/* Body formatting */
 body {
   background-color: #efea8e;
   padding: 15px 25px 15px 25px;
@@ -11,16 +13,12 @@ body {
 /* Title Text */
 h1 {
   color: #f2533d;
-  /*font-family: Helvetica;*/
-  font-weight: bold;
-  text-align: center;
+  font-weight: 900;
 }
 
 /* Description Text */
 h3 {
   color: #f2533d;
-  /*font-family: Helvetica;*/
-  text-align: center;
 }
 
 /* Link Button padding */
@@ -28,7 +26,7 @@ h3 {
  padding-top: 2em;
 }
 
-/* Link Button */
+/* Link Buttons */
 .linkButton {
   background-color: #f2533d;
   border: none;
@@ -36,13 +34,12 @@ h3 {
   padding: 10px;
   cursor: pointer;
   display: block; /* either for width percentage or margin centering? */
-  height: 65px;
-  width: 95%; /* sets button to percentage of screen width */
   margin: 0 auto; /* centers button to screen width */
-  /* font stuff */
+  width: 95%; /* sets button to percentage of screen width */
+  height: 65px;
+  /* font settings */
   color: white;
-  /*font-family: Helvetica;*/
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 25px;
 }
@@ -62,26 +59,8 @@ button img {
   box-align: left;
 }
 
-/* unvisited link */
-a:link {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* mouse over link */
-a:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* selected link */
-a:active {
+/* Link formatting unvisited, visited, mouse over, & selected */
+a:link, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: none;
 }
@@ -179,125 +158,4 @@ a:active {
     width: 40%;
   }
 
-}
-
-
-
-
-/* Modal Pop Up Testing*/
-.modal {
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  transition: all 0.3s ease-in-out;
-  z-index: -1;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal.open {
-  opacity: 1;
-  z-index: 999;
-}
-
-.modal-inner {
-  background-color: white;
-  border-radius: 30px;
-  box-shadow: 0 1px 4px black;
-  padding: 15px 25px;
-  text-align: center;
-  width: 380px;
-}
-
-.modal-inner h2 {
-  margin: 0;
-}
-
-.modal-inner p {
-  line-height: 24px;
-  margin: 10px 0;
-}
-
-.modal-inner img {
-  width: 30%;
-}
-
-
-
-
-/* Other tut testing */
-
-.paymentButtonContainer {
-  width: 100%;
-  height: 20px;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.paymentButton {
-  background-color: #f2533d;
-  border: none;
-  border-radius: 15px;
-  padding: 10px;
-  cursor: pointer;
-  /*display: block; /* either for width percentage or margin centering? */
-  height: 65px;
-  width: 95%; /* sets button to percentage of screen width */
-  margin: 0 auto; /* centers button to screen width */
-  /* font stuff */
-  color: white;
-  font-family: Helvetica;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 25px;
-}
-
-.popup {
-  width: 65%;
-  background: lightgray;
-  border-radius: 15px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.1);
-  padding: 0 30px 30px;
-  color: #333;
-  visibility: hidden;
-  /*justify-content: center;*/
-}
-
-.open-popup {
-  display: block;
-  visibility: visible;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: all 0.4s, top 0.4s ease-in-out;
-}
-
-.popup img {
-  width: 50%;
-  padding: 2%;
-  vertical-align: center;
-}
-
-.popup button {
-  width: 100%;
-  margin-top: 50px;
-  padding: 5px 0;
-  background: #f2533d;
-  color: white;
-  border: 0;
-  outline: none;
-  font-size: 18px;
-  border-radius: 4px;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0 , 0, 0, 0.2);
 }
