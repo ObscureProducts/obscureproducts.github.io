@@ -39,7 +39,7 @@ h3 {
   height: 65px;
   /* font settings */
   color: white;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 25px;
 }
@@ -84,12 +84,8 @@ a:link, a:visited, a:hover, a:active {
 
 } 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-  .logoImage {
+.logoImage {
     display: block;
-    width: 50%;
     margin: 0 auto;
     border-radius: 50%;
     margin: auto;
@@ -98,6 +94,29 @@ a:link, a:visited, a:hover, a:active {
   .payQRTemp {
     display: block;
     margin: auto;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .logoImage {
+    width: 45%;
+  }
+
+  .payQRTemp {
+    width: 75%;
+  }
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .logoImage {
+    width: 50%;
+  }
+
+  .payQRTemp {
     width: 80%;
   }
 
@@ -107,16 +126,10 @@ a:link, a:visited, a:hover, a:active {
 @media only screen and (min-width: 768px) {
 
   .logoImage {
-    display: block;
     width: 40%;
-    margin: 0 auto;
-    border-radius: 50%;
-    margin: auto;
   }
 
   .payQRTemp {
-    display: block;
-    margin: auto;
     width: 60%;
   }
 
@@ -126,16 +139,10 @@ a:link, a:visited, a:hover, a:active {
 @media only screen and (min-width: 992px) {
 
   .logoImage {
-    display: block;
     width: 30%;
-    margin: 0 auto;
-    border-radius: 50%;
-    margin: auto;
   }
 
   .payQRTemp {
-    display: block;
-    margin: auto;
     width: 40%;
   }
 
@@ -145,16 +152,10 @@ a:link, a:visited, a:hover, a:active {
 @media only screen and (min-width: 1200px) {
 
   .logoImage {
-    display: block;
     width: 20%;
-    margin: 0 auto;
-    border-radius: 50%;
-    margin: auto;
   }
 
   .payQRTemp {
-    display: block;
-    margin: auto;
     width: 40%;
   }
 
