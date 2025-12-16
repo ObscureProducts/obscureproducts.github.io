@@ -5,10 +5,12 @@ body {
 
 .logoImage {
   display: block;
-  width: 15%;
+  /* Originally for fitting desktop and need fixed later
+  width: 15%; */
+  width: 50%;
   margin: 0 auto;
   border-radius: 50%;
-  align-self: center;
+  margin: auto;
 }
 
 /* Title Text */
@@ -29,7 +31,9 @@ h3 {
 .payQRTemp {
   display: block;
   margin: auto;
-  width: 30%;
+  /* Originally for fitting desktop and need fixed later
+  width: 30%; */
+  width: 80%;
 }
 
 /* Link Button padding */
