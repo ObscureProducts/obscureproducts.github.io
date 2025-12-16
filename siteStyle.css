@@ -1,22 +1,17 @@
+/* Full site formatting */
+* {
+  font-family: Helvetica;
+}
+
 body {
   background-color: #efea8e;
   padding: 15px 25px 15px 25px;
 }
 
-.logoImage {
-  display: block;
-  /* Originally for fitting desktop and need fixed later
-  width: 15%; */
-  width: 50%;
-  margin: 0 auto;
-  border-radius: 50%;
-  margin: auto;
-}
-
 /* Title Text */
 h1 {
   color: #f2533d;
-  font-family: Helvetica;
+  /*font-family: Helvetica;*/
   font-weight: bold;
   text-align: center;
 }
@@ -24,16 +19,8 @@ h1 {
 /* Description Text */
 h3 {
   color: #f2533d;
-  font-family: Helvetica;
+  /*font-family: Helvetica;*/
   text-align: center;
-}
-
-.payQRTemp {
-  display: block;
-  margin: auto;
-  /* Originally for fitting desktop and need fixed later
-  width: 30%; */
-  width: 80%;
 }
 
 /* Link Button padding */
@@ -54,7 +41,7 @@ h3 {
   margin: 0 auto; /* centers button to screen width */
   /* font stuff */
   color: white;
-  font-family: Helvetica;
+  /*font-family: Helvetica;*/
   font-weight: bold;
   text-transform: uppercase;
   font-size: 25px;
@@ -102,25 +89,95 @@ a:active {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+  .logoImage {
+    display: block;
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .payQRTemp {
+    display: block;
+    margin: auto;
+    width: 75%;
+  }
+
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+  .logoImage {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .payQRTemp {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
 
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+  .logoImage {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .payQRTemp {
+    display: block;
+    margin: auto;
+    width: 60%;
+  }
+
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+  .logoImage {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .payQRTemp {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
+
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+  .logoImage {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .payQRTemp {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
 
 }
 
